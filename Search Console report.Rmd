@@ -1,0 +1,46 @@
+---
+title: "Page Ranking Over Time"
+author: "Larry Lathrop"
+date: "2/8/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Google Search Console
+
+I had this crazy thought I thought I would share. I was wondering what is the page ranking over time by page in Google Search Console.  I would like to build something that gives me insight on how webpage performs over time. This is something you really do not get with the Google Search Console.
+
+The packages I will need are as follows:
+```{r libraries}
+library(googleAuthR)
+library(searchConsoleR)
+library(tidyverse)
+
+```
+
+
+##After installing the 
+
+
+```{r Checking my site lis}
+#Cheking what sites I have
+
+list_websites()
+
+#checked to see if I can see the site map for the owllytics site.
+list_sitemaps("https://www.owllytics.com")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
